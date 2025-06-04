@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="Login.css">
+        <title>Welcome! | Login/Register</title>
+    </head>
+
+    <body>
+
+        <section class="home">
+        <div class="form-animation">
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Create Account</h1>
+                    <div class="social-icons">
+                        <a href="#" id="icons"><i class='bx bxl-google'></i></a>
+                        <a href="#" id="icons"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" id="icons"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" id="icons"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                    <span>or use your email for registeration</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Sign Up</button>
+                </form>
+            </div>
+
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Sign In</h1>
+                    <div class="social-icons">
+                        <a href="#" id="icons"><i class='bx bxl-google'></i></a>
+                        <a href="#" id="icons"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" id="icons"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" id="icons"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                    <span>or use your username & password</span>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button>Sign In</button>
+                </form>
+            </div>
+
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Welcome Back!</h1>
+                        <P>Enter your pesonal details to use all of site features</P>
+                        <button class="hidden" id="login">Sign In</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>First Time?</h1>
+                        <P>Register with your personal details to use all of site features!</P>
+                        <button class="hidden" id="register">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+            </section>
+
+        <script src="Login.js"></script>
+    </body>
+</html>

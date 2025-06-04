@@ -1,0 +1,697 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+/* BASE CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    color: black ;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: white;
+}
+
+/* MAKING FORM */
+.form-container {
+    max-width: 600px;
+    margin: left 0 auto;
+    padding: 18px;
+    border: 4px solid  black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid gray ;
+    font-size: 13px;
+    color:gray;
+    box-sizing: border-box;
+    padding-bottom:10px ;
+    margin-bottom: 12.5px;
+}
+
+.form-container label {
+    font-size: 13.5px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid darkgray;
+    font-size: 13px;
+    color: gray;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 782px;
+    width: 100%;
+    height: 88%;
+    background: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4.5s;
+}
+
+.form-container h2 {
+    margin-bottom: -7px;
+    font-size: 30px;
+}
+
+.form-container p{
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.form-container label {
+    display: absolute;
+    margin-bottom: 8px;
+}
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.form-container button {
+    padding: 10px 15px;
+    border: black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 550;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .25s;
+}
+.form-container button:hover {
+    background-color: darkgray;
+}
+
+/* Logo Website */
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+
+/* Navigation Bar */
+.navbar a {
+    font-size: 18px;
+    width: max-content;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    justify-content: space-between;
+    transition: .3s;
+    z-index: 1;
+}
+
+.navbar a:hover, .navbar a.active {
+  color: gray;
+}
+
+.navbar a:hover{
+    color: gray;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 40px;
+    transform: scaleX(0);
+    transition: transform 0.25s linear;
+    z-index: -1;
+}
+
+.navbar a:hover::before{
+    transform: scaleX(1);
+}
+
+/* background */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    background: url('image.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 10%;
+    position: relative;
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+/* EMBED YT */
+
+.home-content h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    height: 55px;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 300px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 650;
+    color: gray;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 115px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.home-content p {
+    position: relative;
+    font-size: 14px;
+    margin: 10px 0 25px;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 3px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
+    z-index: 2;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent ;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: white ;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 205px;
+    right: 0px;
+    width: 765px;
+    height: 70.5%;
+    background: transparent;
+    transition: 3s;
+}
+
+
+.home-imgHover::after{
+    content: '';
+    position: absolute;
+    top: -175px;
+    right: 0;
+    width: 100%;
+    height: 135.75%;
+    background: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay:2s;
+    z-index: 2;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1280px) {
+    .home {
+        background-size: 70%;
+        background-position: right bottom;
+    }
+
+    .home-content h1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 165%;
+        background: white;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+
+    .home-content .btn-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -20px;
+        width: 120%;
+        height: 110%;
+        background: white;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.9s;
+        z-index: 2;
+    }
+    .home-sci::before{
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: -15px;
+        width: 120%;
+        height: 120%;
+        background: white;
+        animation: showRight 1s ease forwards;
+        animation-delay: .8s;
+        z-index: 2;
+    }
+
+    /* MAKING FORM */
+.form-container {
+    max-width: 500px;
+    margin: left 0 auto;
+    padding: 18px;
+    border: 4px solid  black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid darkgray ;
+    font-size: 11px;
+    color:gray;
+    box-sizing: border-box;
+    padding-bottom:10px ;
+    margin-bottom: 12.5px;
+}
+
+.form-container label {
+    font-size: 11.5px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    color: gray;
+    box-sizing: border-box;
+}
+
+.form-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 782px;
+    width: 100%;
+    height: 88%;
+    background: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .85s;
+}
+
+.form-container h2 {
+    margin-bottom: -7px;
+    font-size: 25px;
+}
+
+.form-container p{
+    margin-bottom: 8px;
+    font-size: 10px;
+}
+
+.form-container label {
+    display: absolute;
+    margin-bottom: 8px;
+}
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.form-container button {
+    padding: 10px 15px;
+    border: black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 550;
+    font-size: 11px;
+    cursor: pointer;
+    transition: .25s;
+}
+}
+
+/* Adjusting font sizes and layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .header {
+        padding:  5%;
+    }
+
+    .home {
+        background-size: 70%;
+        background-position: right bottom;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+        bottom: 10px;
+    }
+
+    .home-content h3 {
+        font-size: 1.25rem;
+        top: 30px;
+    }
+
+       /* MAKING FORM */
+.form-container {
+    max-width: 350px;
+    margin: left 0 auto;
+    padding: 18px;
+    border: 4px solid  black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid darkgray ;
+    font-size: 10px;
+    color:gray;
+    box-sizing: border-box;
+    padding-bottom:10px ;
+    margin-bottom: 5px;
+}
+
+.form-container label {
+    font-size: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 10px;
+    color: gray;
+    box-sizing: border-box;
+}
+
+.form-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 782px;
+    width: 100%;
+    height: 88%;
+    background: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .85s;
+}
+
+.form-container h2 {
+    margin-bottom: -7px;
+    font-size: 20px;
+}
+
+.form-container p{
+    margin-bottom: 8px;
+    font-size: 8px;
+}
+
+.form-container label {
+    display: absolute;
+    margin-bottom: 8px;
+}
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.form-container button {
+    padding: 10px 15px;
+    border: black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 550;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .25s;
+}
+}
+
+
+/* Mobile Screen Adjustments */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px 3%;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+        position: relative;
+        bottom:90px;
+    }
+
+    .home-content h3 {
+        font-size: 1.1rem;
+        position: relative;
+        top: -50px;
+    }
+
+    .home-content p {
+        font-size: 10px;
+        top: -50px;   
+    }
+
+    .home-content .btn-box{
+        padding-right: 10px;
+    }      
+  
+    .home-sci a {
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+
+
+    
+    /* MAKING FORM */
+.form-container {
+    max-width: 600px;
+    margin: left 0 auto;
+    padding: 18px;
+    border: 4px solid  black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid darkgray ;
+    font-size: 10px;
+    color:gray;
+    box-sizing: border-box;
+    padding-bottom:10px ;
+    margin-bottom: 5px;
+}
+
+.form-container label {
+    font-size: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 10px;
+    color: gray;
+    box-sizing: border-box;
+}
+
+.form-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 782px;
+    width: 100%;
+    height: 88%;
+    background: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .85s;
+}
+
+.form-container h2 {
+    margin-bottom: -7px;
+    font-size: 20px;
+}
+
+.form-container p{
+    margin-bottom: 8px;
+    font-size: 8px;
+}
+
+.form-container label {
+    display: absolute;
+    margin-bottom: 8px;
+}
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.form-container button {
+    padding: 10px 15px;
+    border: black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 550;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+}
