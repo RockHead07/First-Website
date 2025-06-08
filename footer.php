@@ -2,7 +2,7 @@
     <div class="footer-content">
         <div class="home-sci">
             <a href="https://www.instagram.com/gaatsuu/"><i class='bx bxl-instagram'></i></a>
-            <a href="https://github.com/RockHead07?tab=repositories"><i class='bx bxl-github'></i></a>
+            <a href="https://github.com/RockHead07"><i class='bx bxl-github'></i></a>
             <a href="https://www.linkedin.com/in/bagus-insan-pradana-69513434a/"><i class='bx bxl-linkedin'></i></a>
         </div>
     </div>

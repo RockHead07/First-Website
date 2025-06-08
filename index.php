@@ -10,11 +10,12 @@
     </title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <?php include 'navbar.php'; ?>
 </head>
 
 <body>
 
-<?php include 'navbar.php'; ?>
 
 
     <section class="home">
@@ -27,7 +28,7 @@
                 and i still have no idea how to coding like everyone else.</p>
             <div class="btn-box">
                 <a href="About_Me.php">About Me?</a>
-                <a href="Gaming/Gaming.html">Gaming</a>
+                <a href="https://www.linkedin.com/in/bagus-insan-pradana-69513434a/">Portfolio</a>
             </div>
         </div>
     </section>

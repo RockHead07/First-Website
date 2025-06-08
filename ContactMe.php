@@ -10,11 +10,10 @@
     </title>
     <link rel="stylesheet" href="ContactStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <?php include 'navbar.php'; ?>
 </head>
 
 <body>  
-<?php include 'navbar.php'; ?>
-
 <section class="home">
     <div class="form-container">
         <h2>Contact Me!</h2>

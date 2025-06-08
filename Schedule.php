@@ -10,12 +10,11 @@
     </title>
     <link rel="stylesheet" href="ScheduleStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <?php include 'navbar.php'; ?>
 </head>
 
 
 <body>
-<?php include 'navbar.php'; ?>
-
 <section class="home">
     <p class="title"><b>My daily schedule:</b></p>
     <div class="schedule-container">

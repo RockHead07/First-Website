@@ -10,12 +10,10 @@
     </title>
     <link rel="stylesheet" href="AboutMeStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <?php include 'navbar.php'; ?>
 </head>
 
 <body>
-    
-<?php include 'navbar.php'; ?>
-
     <!-- Embed YT -->
 <section class="home">
     <div class="YouTube">
