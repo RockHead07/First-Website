@@ -13,18 +13,7 @@
 </head>
 
 <body>  
-    <header class="header">
-        <a href="#" class="logo">
-            Hello.
-        </a>
-        <nav class="navbar">
-            <a href="index.html" class="#">Home</a>
-            <a href="About_Me.html">About</a>
-            <a href="ContactMe.html" class="active">Contact</a>
-            <a href="Schedule.html">Schedule</a>
-        </nav>
-
-    </header>
+<?php include 'navbar.php'; ?>
 
 <section class="home">
     <div class="form-container">
@@ -62,17 +51,9 @@
             </button>
         </form>
     </div>
-    
-
-    <div class="home-sci">
-        <a href="https://www.instagram.com/gaatsuu/"><i class='bx bxl-instagram' ></i></a>
-        <a href="https://steamcommunity.com/profiles/76561198372356977/"><i class='bx bxl-steam'></i></a>
-        <a href="https://web.facebook.com/rock.head.75286?locale=id_ID&_rdc=1&_rdr"><i class='bx bxl-facebook-circle' ></i></a>
-    </div>
-
 </section>
 
-
+<?php include 'footer.php'; ?>
 
 </body>
 

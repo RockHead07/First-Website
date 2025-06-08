@@ -14,15 +14,8 @@
 
 <body>
 
-    <header class="header">
-        <a href="#" class="logo">Hello.</a>
-        <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="About_Me.html">About</a>
-            <a href="ContactMe.html">Contact</a>
-            <a href="Schedule.html">Schedule</a>
-        </nav>
-    </header>
+<?php include 'navbar.php'; ?>
+
 
     <section class="home">
         <div class="home-content">
@@ -33,18 +26,13 @@
             <p>I'am a college student in University of <b>Politeknik Elektronika Negeri Surabaya</b>,
                 and i still have no idea how to coding like everyone else.</p>
             <div class="btn-box">
-                <a href="About_Me.html">About Me?</a>
+                <a href="About_Me.php">About Me?</a>
                 <a href="Gaming/Gaming.html">Gaming</a>
             </div>
         </div>
-    
-    <div class="home-sci">
-        <a href="https://www.instagram.com/gaatsuu/"><i class='bx bxl-instagram' ></i></a>
-        <a href="https://steamcommunity.com/profiles/76561198372356977/"><i class='bx bxl-steam'></i></a>
-        <a href="https://web.facebook.com/rock.head.75286?locale=id_ID&_rdc=1&_rdr"><i class='bx bxl-facebook-circle' ></i></a>
-    </div>
     </section>
 
+<?php include 'footer.php'; ?>
 </body>
 
 </html>

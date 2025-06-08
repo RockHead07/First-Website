@@ -14,18 +14,7 @@
 
 <body>
     
-    <header class="header">
-        <a href="#" class="logo">
-            Hello.
-        </a>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="About_Me.html" class="active">About</a>
-            <a href="ContactMe.html">Contact</a>
-            <a href="Schedule.html">Schedule</a>
-        </nav>
-
-    </header>
+<?php include 'navbar.php'; ?>
 
     <!-- Embed YT -->
 <section class="home">
@@ -46,13 +35,9 @@
             in <b>Politeknik Elektronika Negeri Surabaya</b> pursuing my degree in <b>Informatics Engineering.</b><a href="./Ajax XML/XML.html" class="XML"> I also like movie!</a>
         </p>
     </div>
-    <div class="home-sci">
-        <a href="https://www.instagram.com/gaatsuu/"><i class='bx bxl-instagram' ></i></a>
-        <a href="https://steamcommunity.com/profiles/76561198372356977/"><i class='bx bxl-steam'></i></a>
-        <a href="https://web.facebook.com/rock.head.75286?locale=id_ID&_rdc=1&_rdr"><i class='bx bxl-facebook-circle' ></i></a>
-    </div>
-
 </section>
+
+<?php include 'footer.php'; ?>
 
 </body>
 </html>
