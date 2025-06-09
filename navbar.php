@@ -66,7 +66,6 @@ $nav_items = [
     align-items: center;
     z-index: 100;
     background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo Website */
@@ -177,6 +176,7 @@ $nav_items = [
 @media screen and (max-width: 640px) {
     .header {
         padding: 15px 5%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     
     .logo {
