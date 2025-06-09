@@ -18,7 +18,7 @@
     <div class="form-container">
         <h2>Contact Me!</h2>
         <p>Feel free to get in touch with me by filling out the form below. I’ll respond as soon as possible!</p>
-        <form action="#" method="post">
+        <form action="send_email.php" method="post">
             
             <label for="name">
                 Name :
