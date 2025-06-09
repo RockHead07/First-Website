@@ -203,46 +203,10 @@
         animation-delay: 1.9s;
         z-index: 2;
     }
-
-    .home-sci::before{
-        content: '';
-        position: absolute;
-        top: -5px;
-        right: -15px;
-        width: 120%;
-        height: 120%;
-        background: white;
-        animation: showRight 1s ease forwards;
-        animation-delay: 2.5s;
-        z-index: 2;
-    }
 }
-
 
 /* Adjusting font sizes and layout for smaller screens */
 @media screen and (max-width: 768px) {
-    .header {
-        padding:  5%;
-    }
-
-    .home {
-        background-size: 70%;
-        background-position: right bottom;
-    }
-
-    .navbar a {
-        font-size: 12px;
-        margin-left: 5px;
-    }
-
-    .home-content h1 {
-        font-size: 35px;
-        bottom: 0px;
-        max-width: 600px;
-        height: 40px;
-        font-weight: 700;
-    }
-
     .home-content h1::before {
         content: '';
         position: absolute;

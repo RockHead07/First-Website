@@ -23,14 +23,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'example@gmail.com';        // Your Gmail
-        $mail->Password   = 'bla bla ble ble blu';           // App Password (16 characters)
+        $mail->Username   = 'dana.bagus07@gmail.com';        // Your Gmail
+        $mail->Password   = 'dnvl zbod bmiw tczr';           // App Password (16 characters)
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
         // Email content
-        $mail->setFrom('example@gmail.com', $name);     // Your Gmail as sender
-        $mail->addAddress('example@gmail.com');         // Receiver (yourself)
+        $mail->setFrom('dana.bagus07@gmail.com', $name);     // Your Gmail as sender
+        $mail->addAddress('dana.bagus07@gmail.com');         // Receiver (yourself)
         $mail->isHTML(true);
         $mail->Subject = 'New Contact Form Submission';
         $mail->Body    = "
