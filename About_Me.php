@@ -24,9 +24,8 @@
             About Me!
         </h1>
         <h3>
-            My name is Bagus Insan Pradana!
+Junior Web Developer | Currently Learning Front-End & Back-End Development
         </h3>
-        <h3>But people sometimes called me <i>"Dana"</i> or <i>"Bagus"</i>.</h3>
         <p>I was born in <b>Indonesia</b>, Batam, Riau Islands, August 13th 2005. 
             although i was born in Batam my parent decide to return in Java. 
             I'm pursuing my education mostly in <i>East Java</i>, & now here i'am become a college student

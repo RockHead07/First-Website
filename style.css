@@ -205,8 +205,17 @@
     }
 }
 
+
 /* Adjusting font sizes and layout for smaller screens */
 @media screen and (max-width: 768px) {
+    .home-content h1 {
+        font-size: 35px;
+        bottom: 0px;
+        max-width: 600px;
+        height: 40px;
+        font-weight: 700;
+    }
+
     .home-content h1::before {
         content: '';
         position: absolute;
@@ -221,7 +230,7 @@
 
     .home-content h3 {
         font-size: 22.5px;
-        top: -1.5px;
+        top:  5px;
     }
 
     .home-content p{
@@ -237,7 +246,7 @@
         content: '';
         position: absolute;
         top: 0;
-        right: 45px;
+        right: 60px;
         width: 100%;
         height: 100%;
         background: white;
@@ -256,7 +265,7 @@
     .home-content h3 {
         font-size: 1.1rem;
         position: relative;
-        top: -50px;
+        top: -55px
     }
 
     .home-content p {
@@ -304,6 +313,4 @@
         overflow: hidden;
         transition: .5s;
     }
-
-
 }

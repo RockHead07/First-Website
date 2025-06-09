@@ -20,12 +20,14 @@
 
     <section class="home">
         <div class="home-content">
-            <h1>Hello!!!</h1>
+            <h1>Greetings👋</h1>
             <h1>My name's</h1>
-            <h1>Bagus Insan Pradana.</h1>
+            <h1>Bagus Insan PraDana.</h1>
             <h3>Junior at Informatics Engineering.</h3>
             <p>I'am a college student in University of <b>Politeknik Elektronika Negeri Surabaya</b>,
-                and i still have no idea how to coding like everyone else.</p>
+                a passionate and curious beginner in the world of technology.
+Currently diving into <b>web development</b> & <b>C programming</b>, while pursuing 
+my studies as a proud student at <b>PENS</b>.</p>
             <div class="btn-box">
                 <a href="About_Me.php">About Me?</a>
                 <a href="https://www.linkedin.com/in/bagus-insan-pradana-69513434a/">Portfolio</a>
