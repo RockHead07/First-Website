@@ -16,172 +16,157 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.body {
-    color: black ;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding:20px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    background-color: white;
-}
-
-/* Logo Website */
-
-.logo {
-    position: relative;
-    font-size: 25px;
+body {
     color: black;
-    text-decoration: none;
-    font-weight: 600;
 }
 
-.logo::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    animation: showRight 1s ease forwards;
-    animation-delay: .4s;
-}
-
-
-/* Navigation Bar */
-.navbar a {
-    font-size: 18px;
-    width: max-content;
-    position: relative;
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    justify-content: space-between;
-    transition: .3s;
-    z-index: 1;
-}
-
-.navbar a:hover, .navbar a.active {
-  color: gray;
-}
-
-.navbar a:hover{
-    color: gray;
-}
-
-.navbar a::before{
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    height: 4px;
-    width: 100%;
-    background: black;
-    border-radius: 40px;
-    transform: scaleX(0);
-    transition: transform 0.25s linear;
-    z-index: -1;
-}
-
-.navbar a:hover::before{
-    transform: scaleX(1);
-}
-
-/* SCHEDULE TABLE */
-
-.title {
-    font-size: 20px;
-    margin-bottom: 220px;
-}
-
-
-.schedule-container {
-    margin: -200px;
-    width: 90%;
-    max-width: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
-}
-
-thead {
-    font-size: 12px;
-    background-color: #333;
-    color: white;
-}
-
-th, td {
-    padding: 16px;
-    text-align: center;
-    border: 1px solid black;
-
-}
-
-tbody tr{
-    border-bottom: 2px solid darkgray;
-}
-
-tbody tr:last-of-type{
-    border-bottom: 2px solid black !important;
-}
-
-tbody tr:nth-child(even) {
-    background-color: whitesmoke;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: white;
-}
-
-tbody tr:hover {
-    background-color: #ddd;
-}
-
-th {
-    background-color: solid black !important;
-}
-
-td {
-    font-size: 10px;
-    color: solid black;
-    font-weight: 200px;
-    padding: 11.5px;
-}
-
-
-/* background */
+/* HOME SECTION */
 .home {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: white;
     background: url('image.png') no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 0 10%;
+    padding: 80px 10% 40px;
     position: relative;
 }
 
-.home-content {
-    max-width: 750px;
+.schedule-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* ICON */
+/* TITLE */
+.title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+}
+
+/* SCHEDULE CONTAINER */
+.schedule-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* DESKTOP TABLE VIEW */
+.desktop-view {
+    display: block;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 700px;
+}
+
+.schedule-table thead {
+    background-color: #333;
+    color: white;
+}
+
+.schedule-table th {
+    padding: 16px 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.schedule-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.schedule-table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #e8f4f8;
+    transform: translateY(-1px);
+}
+
+.schedule-table td {
+    padding: 14px 12px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    border: none;
+    font-weight: 400;
+}
+
+/* MOBILE CARD VIEW */
+.day-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.day-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.day-card h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.day-card .activity {
+    padding: 8px 12px;
+    margin: 6px 0;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
+    border-left: 3px solid #333;
+    transition: all 0.2s ease;
+}
+
+.day-card .activity:hover {
+    background-color: #e8f4f8;
+    border-left-color: #007bff;
+}
+
+/* SOCIAL ICONS */
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -190,7 +175,7 @@ td {
     justify-content: space-between;
 }
 
-.home-sci::before{
+.home-sci::before {
     content: '';
     position: absolute;
     top: 0;
@@ -210,7 +195,7 @@ td {
     align-items: center;
     width: 40px;
     height: 40px;
-    background: transparent ;
+    background: transparent;
     border: 2px solid black;
     border-radius: 50%;
     font-size: 20px;
@@ -218,6 +203,7 @@ td {
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .home-sci a::before {
@@ -233,362 +219,87 @@ td {
 }
 
 .home-sci a:hover {
-    color: white ;
+    color: white;
 }
 
 .home-sci a:hover::before {
     width: 100%;
 }
 
-.home-imgHover {
-    position: absolute;
-    top: 205px;
-    right: 0px;
-    width: 765px;
-    height: 70.5%;
-    background: transparent;
-    transition: 3s;
-}
-
-
 /* RESPONSIVE DESIGN */
 
+/* Large Desktop */
 @media screen and (max-width: 1280px) {
     .home {
         background-size: 70%;
         background-position: right bottom;
     }
-
-    .home-content h1::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 165%;
-        background: white;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1s;
+    
+    .schedule-table {
+        min-width: 600px;
     }
-
-
-    .home-content .btn-box::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -20px;
-        width: 120%;
-        height: 110%;
-        background: white;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.9s;
-        z-index: 2;
-    }
-
 }
 
-
-/* Adjusting font sizes and layout for smaller screens */
+/* Small Tablet */
 @media screen and (max-width: 768px) {
-    .header {
-        padding:  5%;
-    }
-
     .home {
-        background-size: 70%;
-        background-position: right bottom;
-    }
-
-    .navbar a {
-        font-size: 12px;
-        margin-left: 5px;
-    }
-
-    .home-content h1 {
-        font-size: 35px;
-        bottom: 10px;
-    }
-
-    .home-content h1::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 165%;
-        background: white;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1s;
-    }
-
-    .home-content h3 {
-        font-size: 18px;
-        top: 25px;
-    }
-
-    .home-content p{
-        font-size: 14px;
-        top: 20px;
-    }
-.home-sci {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.home-sci::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    animation: showRight 1s ease forwards;
-    animation-delay: .8s;
-    z-index: 2;
-}
-
-.home-sci a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent ;
-    border: 2px solid black;
-    border-radius: 50%;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.home-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: black;
-    z-index: -1;
-    transition: .5s;
-}
-
-.home-sci a:hover {
-    color: white ;
-}
-
-.home-sci a:hover::before {
-    width: 100%;
-}
-
-.home-imgHover {
-    position: absolute;
-    top: 205px;
-    right: 0px;
-    width: 765px;
-    height: 70.5%;
-    background: transparent;
-    transition: 3s;
-}
-
-
-    /* Table */
-    .schedule-container {
-        margin: -198px;
-        width: 980%;
-        max-width: 20px;
+        padding: 80px 5% 40px;
     }
     
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 20px 20px 0 0;
-        overflow: hidden;
-    }
-    
-    thead {
-        font-size: 10.75px;
-        background-color: #333;
-        color: white;
-    }
-    
-    th, td {
-        padding: 11px;
-        text-align: center;
-        border: 1px solid black;
-    
-    }
-    
-    tbody tr{
-        border-bottom: 2px solid darkgray;
-    }
-    
-    tbody tr:last-of-type{
-        border-bottom: 2px solid black !important;
-    }
-    
-    tbody tr:nth-child(even) {
-        background-color: whitesmoke;
-    }
-    
-    tbody tr:nth-child(odd) {
-        background-color: white;
-    }
-    
-    tbody tr:hover {
-        background-color: #ddd;
-    }
-    
-    th {
-        background-color: solid black !important;
-    }
-    
-    td {
-        font-size: 7.5px;
-        color: solid black;
-        font-weight: 200px;
-        padding: 10px;
-    }
-}
-
-
-/* Mobile Screen Adjustments */
-@media screen and (max-width: 480px) {
-    .header {
-        padding: 10px 3%;
-    }
-
-    .navbar a {
-        font-size: 12px;
-        margin-left: 5px;
-    }
-
     .title {
-        font-size: 20px;
-        margin-bottom: 220px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     
-    /* Table */
-    .schedule-container {
-        margin: -222.5px;
-        width: 90%;
-        max-width: 20px;
+    /* Switch to mobile view */
+    .desktop-view {
+        display: none;
     }
     
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 20px 20px 0 0;
-        overflow: hidden;
+    .mobile-view {
+        display: block;
     }
     
-    thead {
-        font-size: 8px;
-        background-color: #333;
-        color: white;
+    .day-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 52px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+    
+    .day-card h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
     }
     
-    th, td {
-        padding: 8px;
-        text-align: center;
-        border: 1px solid black;
-    
+    .day-card .activity {
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) { 
+    .home {
+        padding: 70px 3% 30px;
     }
     
-    tbody tr{
-        border-bottom: 2px solid darkgray;
+    .title {
+        font-size: 18px;
+        margin-bottom: 25px;
     }
     
-    tbody tr:last-of-type{
-        border-bottom: 2px solid black !important;
+    .day-card {
+        padding: 6px;
+        margin-bottom: 66px;
     }
     
-    tbody tr:nth-child(even) {
-        background-color: whitesmoke;
-    }
-    
-    tbody tr:nth-child(odd) {
-        background-color: white;
-    }
-    
-    tbody tr:hover {
-        background-color: #ddd;
-    }
-    
-    th {
-        background-color: solid black !important;
-    }
-    
-    td {
-        font-size: 6px;
-        color: solid black;
-        font-weight: 200px;
-        padding: 10px;
-    }
-    
-/* //Web */
-    .home-content h1::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 160%;
-        background: white;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1s;
+    .day-card h3 {
+        font-size: 15px;
+        margin-bottom: 8px;
     }
 
-    .home-content h1 {
-        font-size: 2rem;
-        position: relative;
-        bottom:90px;
-    }
-
-    .home-content h3 {
-        font-size: 1.1rem;
-        position: relative;
-        top: -50px;
-    }
-
-    .home-content p {
-        font-size: 10px;
-        top: -50px;   
-    }
-
-    .home-content .btn-box{
-        padding-right: 10px;
-    }      
-
-    .home-content .btn-box::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 110%;
-        height: 110%;
-        background: black;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.9s;
-        z-index: 2;
-    }
-  
-    .home-sci a {
-        width: 35px;
-        height: 35px;
-        font-size: 1.25rem;
-    }
 }
