@@ -41,13 +41,13 @@
                     <td>Wake Up</td>
                 </tr>
                 <tr>
-                    <td>School</td>
-                    <td>School</td>
-                    <td>School</td>
-                    <td>School</td>
-                    <td>School</td>
-                    <td>Holiday</td>
-                    <td>Holiday</td>
+                    <td>Study</td>
+                    <td>Study</td>
+                    <td>Study</td>
+                    <td>Study</td>
+                    <td>Study</td>
+                    <td>Study</td>
+                    <td>Study</td>
                 </tr>
                 <tr>
                     <td>Sleep</td>
