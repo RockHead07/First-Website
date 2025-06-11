@@ -19,18 +19,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
-        // SMTP settings
+        // Brevo SMTP Settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
+        $mail->Host       = 'smtp-relay.brevo.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'example@gmail.com';        // Your Gmail
-        $mail->Password   = 'bla bla ble ble blu';           // App Password (16 characters)
+        $mail->Username   = '8f6da3001@smtp-brevo.com';    // From your Brevo screenshot
+        $mail->Password   = 'IqWB0SpsjxmVK3gD';          // Replace with your actual SMTP key
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
         // Email content
-        $mail->setFrom('example@gmail.com', $name);     // Your Gmail as sender
-        $mail->addAddress('example@gmail.com');         // Receiver (yourself)
+        $mail->setFrom('dana.bagus07@gmail.com', $name); // Replace with a verified Brevo sender
+        $mail->addAddress('dana.bagus07@gmail.com');            // Who receives the email
         $mail->isHTML(true);
         $mail->Subject = 'New Contact Form Submission';
         $mail->Body    = "
@@ -44,95 +44,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Success popup
         echo "
-        <!DOCTYPE html>
-        <html lang='en'>
-        <head>
-            <meta charset='UTF-8'>
-            <title>Success</title>
-            <link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet'>
+        <html><head>
             <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+            <link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet'>
             <style>
-                .swal2-popup {
-                    font-family: 'Poppins', sans-serif;
-                    background-color: #000 !important;
-                    color: #fff !important;
-                    border-radius: 10px;
-                }
-                .swal2-title,
-                .swal2-html-container {
-                    color: #fff !important;
-                }
-                .swal2-confirm {
-                    background-color: #444 !important;
-                    color: #fff !important;
-                    font-family: 'Poppins', sans-serif;
-                }
+                .swal2-popup { font-family: 'Poppins', sans-serif; background-color: #000; color: #fff; border-radius: 10px; }
+                .swal2-title, .swal2-html-container { color: #fff; }
+                .swal2-confirm { background-color: #444; color: #fff; }
             </style>
-        </head>
-        <body>
-        <script>
-            Swal.fire({
-                icon: 'success',
-                title: 'Success!',
-                text: 'Message sent successfully!',
-                background: '#000',
-                color: '#fff',
-                confirmButtonColor: '#444',
-                confirmButtonText: 'OK'
-            }).then(() => {
-                window.history.back();
-            });
-        </script>
-        </body>
-        </html>
+        </head><body>
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Message sent successfully!',
+                    background: '#000',
+                    color: '#fff',
+                    confirmButtonColor: '#444',
+                    confirmButtonText: 'OK'
+                }).then(() => {
+                    window.history.back();
+                });
+            </script>
+        </body></html>
         ";
 
     } catch (Exception $e) {
-        // Error popup
         echo "
-        <!DOCTYPE html>
-        <html lang='en'>
-        <head>
-            <meta charset='UTF-8'>
-            <title>Error</title>
-            <link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet'>
+        <html><head>
             <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+            <link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet'>
             <style>
-                .swal2-popup {
-                    font-family: 'Poppins', sans-serif;
-                    background-color: #000 !important;
-                    color: #fff !important;
-                }
-                .swal2-title,
-                .swal2-html-container {
-                    color: #fff !important;
-                }
-                .swal2-confirm {
-                    background-color: #444 !important;
-                    color: #fff !important;
-                    font-family: 'Poppins', sans-serif;
-                }
+                .swal2-popup { font-family: 'Poppins', sans-serif; background-color: #000; color: #fff; border-radius: 10px; }
+                .swal2-title, .swal2-html-container { color: #fff; }
+                .swal2-confirm { background-color: #444; color: #fff; }
             </style>
-        </head>
-        <body>
-        <script>
-            Swal.fire({
-                icon: 'error',
-                title: 'Failed!',
-                text: 'Mailer Error: " . addslashes($mail->ErrorInfo) . "',
-                background: '#000',
-                color: '#fff',
-                confirmButtonColor: '#444',
-                confirmButtonText: 'OK'
-            }).then(() => {
-                window.history.back();
-            });
-        </script>
-        </body>
-        </html>
+        </head><body>
+            <script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Failed!',
+                    html: 'Mailer Error: " . addslashes($mail->ErrorInfo) . "',
+                    background: '#000',
+                    color: '#fff',
+                    confirmButtonColor: '#444',
+                    confirmButtonText: 'OK'
+                }).then(() => {
+                    window.history.back();
+                });
+            </script>
+        </body></html>
         ";
     }
 }
 ?>
-<?php
-// End of send_email.php
