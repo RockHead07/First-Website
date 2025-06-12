@@ -240,7 +240,17 @@
 
 }
 /* Mobile Screen Adjustments */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 497px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .home {
+    padding: 0 5%; /* or even 2% or 10px */
+    }
 
     .home-content h1::before {
         content: '';
@@ -275,9 +285,9 @@
     }
 
     .home-content .btn-box{
-        padding-right: 0px;
+        padding-right: 35px;
         bottom: 30px;
-        right: 20px;
+        right: 10px;
     }      
 
     .home-content .btn-box::before {
